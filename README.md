@@ -1,0 +1,2 @@
+# addlist
+alışveriş listesi
