@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 style="color:red;">Alışveriş listesi</h2>
+    <input type="text" name="" id="urun"><button id="ekle">Ürün ekle</button><br>
+    <ul id="liste"></ul>
+
+    <script>
+const urun  = document.querySelector("#urun");
+const ekle  = document.querySelector("#ekle");
+const liste = document.querySelector("#liste");
+
+ekle.onclick=function(){
+    let li =document.createElement("li");
+    li.textContent  = urun.value;
+
+    liste.appendChild(li);
+
+    urun.value="";
+    urun.focus();
+}
+
+
+
+</script>
+</body>
+</html>
